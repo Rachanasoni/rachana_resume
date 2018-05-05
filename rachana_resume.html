@@ -1,0 +1,583 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Rachana soni-resume</title>
+	<link href="assets/css/bootstrap.css" rel="stylesheet">
+	<script src="assets/js/jquery.min.js"></script>
+	<script src="assets/js/bootstrap.js"></script>
+	<link href="assets/css/font-awesome.css" rel="stylesheet">
+	<style>
+		body {
+			font-family: serif;
+			overflow-x: hidden;
+			padding: 0px;
+			margin: 0px;
+
+		}
+
+		#sidediv {
+			background-color: darkcyan;
+			height: 820px;
+			padding: 0px;
+			text-align: center;
+			position: fixed;
+			margin: 0px;
+
+		}
+
+
+
+		#mainpage {
+			padding-top: 40px;
+			padding-right: 0px;
+			min-height: 700px;
+			position: relative;
+			padding-left: 400px;
+			top:10px;
+
+
+
+		}
+
+		header {
+			border-radius: 75px;
+			text-align: center;
+			padding-top: 100px;
+
+
+		}
+
+		.nav-bar>ul>li>a {
+			color: white;
+			font-size: 18px;
+			text-align: center;
+			display: block;
+			padding-top: 30px;
+			text-decoration: none;
+			z-index: 1;
+
+		}
+
+		
+		#vertical{
+			width:1px;
+			height:820px;
+			background-color: darkcyan;
+			position:fixed;
+			top:0px;
+			left:320px;
+			
+		}
+
+		#name {
+			font-size: 80px;
+			font-weight: 900px;
+			font-family: serif;
+			text-transform: uppercase;
+			color: #343a40;
+			padding-top: 110px;
+		}
+
+		#surname {
+			font-size: 80px;
+			font-weight: 900px;
+			font-family: 'serif';
+			text-transform: uppercase;
+			color: darkcyan;
+		}
+
+		#address {
+			font-family: 'serif';
+			font-weight: bold;
+			color: dimgray;
+		}
+
+		#email {
+			font-family: 'serif';
+			font-weight: bold;
+			color: darkcyan;
+			text-transform: uppercase;
+		}
+
+		#intro1 {
+			font-family: 'serif';
+			color: dimgray;
+			text-align: justify;
+			padding-top: 100px;
+			padding-bottom: 340px;
+			font-size: 20px;
+
+		}
+
+
+		ul {
+			text-align: center;
+			padding-left: 20px;
+			list-style-type: none;
+		}
+
+		#intro {
+			font-family: 'serif';
+			color: dimgray;
+			text-align: justify;
+			padding-top: 50px;
+			padding-bottom: 150px;
+			font-size: 20px;
+
+		}
+
+		h2 {
+			font-size: 45px;
+			font-family: serif;
+			font-weight: 700;
+			text-transform: uppercase;
+			color: #343a40;
+			margin-top: 50px;
+		}
+
+
+		#heading {
+			font-size: 30px;
+			font-family: serif;
+			font-weight: bold;
+			text-transform: uppercase;
+			color: #343a40;
+			padding-top: 20px;
+
+		}
+
+		#heading1 {
+			font-size: 30px;
+			font-family: serif;
+			font-weight: bold;
+			text-transform: uppercase;
+			color: #343a40;
+			padding-top: 40px;
+			display: inline;
+
+		}
+
+		#period {
+			padding-left: 0px;
+			font-size: 20px;
+			color: darkcyan;
+		}
+
+
+		#per {
+			padding-bottom: 100px;
+		}
+
+		#interest1 {
+			font-weight: bold;
+			color: dimgrey;
+
+		}
+
+		/*#togglebtn {
+			color: white;
+			padding-top: 20px;
+			text-align: right;
+			padding-right: 20px;
+
+		}*/
+
+		
+		
+		@media screen and (min-width:100px) and (max-width:600px) {
+
+			#mainpage,
+				{
+				position:absolute;
+				top: 800px;
+				left: 0px;
+				min-width: 100% !important;
+				padding-left: 0px;
+				margin: 0px;
+					margin-top: 140px;
+
+
+			}
+
+
+			#sidediv {
+				position:relative;
+				top: 0px;
+				height: 460px!important;
+				width: 100%;
+				margin: 0px;
+				z-index: 1;
+
+
+			}
+
+			img {
+				height: 100px;
+				width: 100px;
+				padding-top:0px;
+				position:relative;
+				top:-70px;
+			left:20px;
+				-webkit-transition: background 2s ;
+			transition: background 2s ;
+				
+			
+			}
+			
+			img:hover{
+				opacity:.2;
+				
+			}
+			.nav-bar>ul>li>a {
+				position: relative;
+				top: -40px;
+				padding-top: 10px;
+			left:0px;
+				padding-left: 0px;
+
+
+
+			}
+
+
+			#mainpage {
+				position:absolute;
+				top: 360px;
+				width: 100%;
+				margin: 0px;
+				left: 0px;
+				padding: 20px;
+				overflow-x: auto;
+				text-align: justify;
+
+			}
+
+
+			#vertical{
+			
+			width:94%;
+			height:20px;
+			background-color: darkcyan;
+			position:absolute;
+			top:470px;
+			left:14px;
+				text-align:center;		
+			
+		}
+
+			#about {
+				position: relative;
+				top: 100px;
+
+
+			}
+			
+			#edu{
+				position: relative;
+				
+			}
+
+		}
+
+
+
+
+		@media screen and (min-width:601px) and (max-width:1600px) {
+
+			#mainpage,
+				{
+				position: relative;
+				min-width: 100% !important;
+				padding-left: 0px;
+				margin: 0px;
+				
+
+
+			}
+
+			#sidediv {
+				background-color: darkcyan;
+				height: 820px;
+				padding: 0px;
+				text-align: center;
+				position: fixed;
+				margin: 0px;
+				width: 300px;
+				z-index: 1;
+
+			}
+
+
+			.nav-bar>ul>li>a {
+				position: relative;
+				top: 200px;
+				padding-top: 20px;
+				text-align: center;
+				padding-left:0px;
+		
+			}
+
+			img {
+				height: 180px;
+				width: 180px;
+				padding-top: 0px;
+				position: absolute;
+				top: 10px;
+				left: 60px;
+				text-align: center;
+				margin-top: 100px;
+				-webkit-transition: background 2s ;
+			transition: background 2s ;
+				
+			}
+			img:hover{
+				opacity: .2;
+			}
+
+		}
+	</style>
+
+	<script>
+		$(document).ready(function() {
+			$(".nav-bar").localScroll({duration:800});
+		})
+	</script>
+
+</head>
+
+<body>
+	<div class="container-fluid">
+		<section>
+			<div class="col-sm-1" id="sidediv">
+
+				<nav class="nav nav-bar">
+					<!--<div id="togglebtn"><i class="fa fa-bars fa-2x"></i></div>-->
+					<header><img src="assets/images/rachana1.png" height="180px" class="img-circle" style="border:4px solid white;"></header>
+					<ul>
+						<li><a href="#about">ABOUT</a></li>
+						<li><a href="#exp">EXPERIENCE</a></li>
+						<li><a href="#edu">EDUCATION</a></li>
+						<li><a href="#skill">SKILLS</a></li>
+						<li><a href="#interest">INTEREST</a></li>
+						<li><a href="#awards">AWARD<br> &amp;<br>CERTIFICATIONS</a></li>
+					</ul>
+				</nav>
+
+
+			</div>
+			<div class="col-sm-1" id="vertical">
+				
+			</div>
+			<div class="col-sm-10" id="mainpage">
+
+				<section id="about" style="min-height:820px;">
+					<h1 id="name">RACHANA<span id="surname"> SONI</span></h1>
+					<h4 id="address"> HOUSE NO-176, NEAR BADI CHANDRIKA DEVI GATE BHATIPURA, MAHOBA<br> (+91) 9695280897 · <span id="email">rachanasoni7@gmail.com</span></h4>
+
+			
+					<h4 id="intro1">An Independent Thinker who gives end results to companies who require talented Web Developer &amp; web Consultant.I have three years of hands-on experience efficiently coding websites and applications using modern HTML, CSS, and JavaScript and other front end technologies.To apply my skills, intellectual &amp; experience in web projects and deliver an effective business solution, seeking a project oriented career offering to implement and continuously learn latest Front-End technologies.</h4>
+				</section>
+				<hr>
+				<section id="exp" style="padding-top:80px; min-height:820px;">
+					<h2>EXPERIENCE</h2>
+					<h3 id="heading">Web developer</h3>
+					<h4 style="font-weight: bold;">Upwork Global Inc.</h4>
+					<span id="period">AT PRESENT</span>
+					<h4 id="intro">Working as a Freelancer for German Clients. Completed project independently which included web development using technologies like HTML5, CSS3, jQuery , JavaScript, Photoshop. Completed project documentation &amp; analyses data sheets using Microsoft Excel. Also created multiple PPTs for fully-functional prototype demonstrations in academic project. Design &amp; development of web pages, image modification using Photoshop &amp; other online tools.</h4>
+
+
+					<h3 id="heading">MEMBER OF TECHNICAL STAFF</h3>
+					<h4 style="font-weight: bold;">K.G.B.V</h4>
+					<span id="period">MAY 2015 - JUL 2016</span>
+					<h4 id="intro">Highly adept in providing professional development integrating technology into existing curriculum and creating new lesson plans to encompass technology in all classrooms. Demonstrates excellent organizational and team building skills. Developed Computer lesson plans encompassing current technologies equipment softwares and web-based applications. Created learning resources for Teachers and students including Power Point tutorials websites and interactive learning modules. Taught basic care and maintenance of computer equipment and programming such as anti-virus and spyware removal software usage and upgrades.</h4>
+
+
+					<h3 id="heading">SOFTWARE ENGINEER</h3>
+					<h4 style="font-weight: bold;">ARYA IT SOLUTIONS</h4>
+					<span id="period">JAN 2014 - MAY 2015</span>
+					<h4 id="intro">Design and developed responsive websites for clients. Collaborated with the design team to define the information architecture. Advocated Web interaction design best practices, with a focus on consistency and usability. Assured that all user input is validated before submitting to back-end. Worked with backend engineers and QA to see projects through, from conception to completion. Closely worked with back-end developers to optimize existing Web technology and created the best possible user experience.</h4>
+
+
+				</section>
+				<hr>
+				<section id="edu" style="padding-top:80px; padding-bottom:100px; min-height:820px;">
+					<h2>Education</h2>
+					<h3 id="heading">BACHELOR&nbsp;OF TECHNOLOGY</h3>
+					<span id="period"> AUG 2007 - JUL 2011</span>
+					<h4 style="font-weight: bold;">Electronics &amp; Communication Engineering</h4>
+					<h4 style="font-weight:bold; color:dimgrey;">Gautam Buddh Technical University Lucknow</h4>
+					<h4 id="per">Successfully completed with 77.78 %</h4>
+
+					<h3 id="heading">PUC</h3>
+					<span id="period"> JUL 2005 - MAY 2007</span>
+					<h4 style="font-weight: bold;">PCM</h4>
+					<h4 style="font-weight:bold; color:dimgrey;">Board of High School and Intermediate Education Uttar Pradesh</h4>
+					<h4 id="per">Successfully completed with 77.00 %</h4>
+
+					<h3 id="heading">SSLC</h3>
+					<span id="period"> JUL 2003 - MAY 2005</span>
+					<h4 style="font-weight: bold;">Science </h4>
+					<h4 style="font-weight:bold; color:dimgrey;">Board of High School and Intermediate Education Uttar Pradesh</h4>
+					<h4 id="per">Successfully completed with 70.66 %</h4>
+
+				</section>
+				<hr>
+
+				<section id="skill" style="padding-top:20px; padding-bottom: 100px; min-height:820px;">
+					<h2>Skills</h2>
+					<br>
+					<br>
+					<br>
+					<div class="row">
+						<div class="col-sm-3">
+							<h4 style="font-weight:bold; color:dimgrey;">HTML5</h4>
+						</div>
+						<div class="col-sm-9" style="padding:40px;padding-right: 80px;padding-top:20px;">
+							<div class="progress">
+								<div class="progress-bar progress-bar-success progress-bar-striped active" role="progressbar" areia-valuemin="0" areia-valuemax="100" areiavaluenow="85%" style="width:85%; background-color:darkcyan;">
+									85%
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="row">
+						<div class="col-sm-3">
+							<h4 style="font-weight:bold; color:dimgrey;">CSS3</h4>
+						</div>
+						<div class="col-sm-9" style="padding:40px;padding-right: 80px;padding-top:20px;">
+							<div class="progress">
+								<div class="progress-bar progress-bar-danger progress-bar-striped active" role="progressbar" areia-valuemin="0" areia-valuemax="100" areiavaluenow="90%" style="width:90%; background-color:darkcyan;">
+									90%
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="row">
+						<div class="col-sm-3">
+							<h4 style="font-weight:bold; color:dimgrey;">JAVASCRIPT</h4>
+						</div>
+						<div class="col-sm-9" style="padding:40px;padding-right: 80px;padding-top:20px;">
+							<div class="progress">
+								<div class="progress-bar progress-bar-success progress-bar-striped active" role="progressbar" areia-valuemin="0" areia-valuemax="100" areiavaluenow="80%" style="width:80%; background-color:darkcyan;">
+									80%
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="row">
+						<div class="col-sm-3">
+							<h4 style="font-weight:bold; color:dimgrey;">BOOTSTRAP</h4>
+						</div>
+						<div class="col-sm-9" style="padding:40px;padding-right: 80px; padding-top:20px;">
+							<div class="progress">
+								<div class="progress-bar progress-bar-danger progress-bar-striped active" role="progressbar" areia-valuemin="0" areia-valuemax="100" areiavaluenow="80%" style="width:90%; background-color:darkcyan;">
+									90%
+								</div>
+							</div>
+						</div>
+					</div>
+
+
+
+					<div class="row">
+						<div class="col-sm-3">
+							<h4 style="font-weight:bold; color:dimgrey;">JQUERY</h4>
+						</div>
+						<div class="col-sm-9" style="padding:40px;padding-right: 80px; padding-top:20px;">
+							<div class="progress">
+								<div class="progress-bar progress-bar-success progress-bar-striped active" role="progressbar" areia-valuemin="0" areia-valuemax="100" areiavaluenow="80%" style="width:80%; background-color:darkcyan;">
+									80%
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="row">
+						<div class="col-sm-3">
+							<h4 style="font-weight:bold; color:dimgrey;">AJAX</h4>
+						</div>
+						<div class="col-sm-9" style="padding:40px;padding-right: 80px; padding-top:20px;">
+							<div class="progress">
+								<div class="progress-bar progress-bar-success progress-bar-striped active" role="progressbar" areia-valuemin="0" areia-valuemax="100" areiavaluenow="80%" style="width:80%; background-color:darkcyan;">
+									80%
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-sm-3">
+							<h4 style="font-weight:bold; color:dimgrey;">JSON</h4>
+						</div>
+						<div class="col-sm-9" style="padding:40px;padding-right: 80px; padding-top:20px;">
+							<div class="progress">
+								<div class="progress-bar progress-bar-primary progress-bar-striped active" role="progressbar" areia-valuemin="0" areia-valuemax="100" areiavaluenow="80%" style="width:70%; background-color:darkcyan;">
+									70%
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="row">
+						<div class="col-sm-3">
+							<h4 style="font-weight:bold; color:dimgrey;">ANGULAR JS</h4>
+						</div>
+						<div class="col-sm-9" style="padding:40px;padding-right: 80px;padding-top:20px;">
+							<div class="progress">
+								<div class="progress-bar progress-bar-primary progress-bar-striped active" role="progressbar" areia-valuemin="0" areia-valuemax="100" areiavaluenow="80%" style="width:70%; background-color:darkcyan;">
+									70%
+								</div>
+							</div>
+						</div>
+					</div>
+					<div>
+						<h2 style="font-size:35px;padding-top:50px;padding-bottom: 80px;">Miscellaneous</h2>
+						<h4><i class="fa fa-check"></i>&nbsp;MANUAL TEST CASES CREATION</h4>
+						<h4><i class="fa fa-check"></i>&nbsp;GIT</h4>
+						<h4><i class="fa fa-check"></i>&nbsp;BRACKETS</h4>
+						<h4><i class="fa fa-check"></i>&nbsp;GIMP</h4>
+						<h4><i class="fa fa-check"></i>&nbsp;VISUAL CODE STUDIO</h4>
+					</div>
+				</section>
+				
+				<hr>
+
+				<section id="interest" style="padding-top:110px; padding-bottom: 80px; margin-bottom: 220px; height:820px;">
+					<h2>INTEREST</h2>
+					<br>
+					<br>
+					<h4 ><span id="interest1"><i class="fa fa-paint-brush"></i>&nbsp;</span>Painting &amp; Drawing</h4>
+					<h4> <span id="interest1"><i class="fa fa-cut"></i>&nbsp;</span>Crafting</h4>
+					<h4> <span id="interest1"><i class="fa fa-book"></i>&nbsp;</span>Reading Novels</h4>
+					<h4><span id="interest1"><i class="fa fa-film"></i>&nbsp;</span>Watching Movies</h4>
+					<h4><span id="interest1"><i class="fa fa-headphones"></i>&nbsp;</span>Listen To Music</h4>
+
+				</section>
+				<hr>
+
+				<section id="awards" style="padding-top:110px; padding-bottom:200px; height:820px;">
+					<h2>AWARD &amp; CERTIFICATIONS</h2>
+					<br>
+					<br>
+					<h4><i class="fa fa-trophy"></i>&nbsp;Extra ordinary Student Award for scoring highest marks in Secondary Examination.</h4>
+					<h4><i class="fa fa-trophy"></i>&nbsp;Coordinator of Cultural Committee (Golden level) in Gyan Jyoti 2010.</h4>
+					<h4><i class="fa fa-trophy"></i>&nbsp;Worked as Associate Manager of Cultural Committee (Silver level) in Gyan Jyoti 2009.</h4>
+					<h4><i class="fa fa-trophy"></i>&nbsp;First prize winner in drawing competition in 2005 at Commissionary level.</h4>
+					<h4><i class="fa fa-trophy"></i>&nbsp;Participated in many Debate/Essay competitions in school level.</h4>
+					<h4><i class="fa fa-trophy"></i>&nbsp;Received appreciation email from Edureka for completing all necessary assignment on time.</h4>
+				</section>
+
+				<hr>
+
+
+			</div>
+		</section>
+	</div>
+
+
+</body>
+
+</html>
